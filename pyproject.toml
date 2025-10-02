@@ -1,0 +1,19 @@
+[project]
+name = "space-repetition-offlinerl"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "torch",
+    "gymnasium",
+    "tensorboard",
+    "tianshou",
+    "tensorboard>=2.20.0",
+]
+
+[dependency-groups]
+dev = ["ipykernel", "ipywidgets", "jupyter"]
+
+[tool.uv.sources]
+tianshou = { git = "https://github.com/thu-ml/tianshou.git" }
